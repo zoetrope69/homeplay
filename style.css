@@ -3,3 +3,89 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background: black;
+  background-image: url('background.jpg');
+  
+  color: white;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+header,
+main {
+  padding: 1em;
+}
+
+.logo {
+  height: 75px;
+  width: 100px;
+}
+
+.logo__h-top {
+  fill: #2f6eb4;
+}
+
+.logo__h-middle {
+  fill: #00ab9f;
+}
+
+.logo__h-bottom {
+  fill: #f4c305;
+}
+
+.logo__p-main,
+.logo__p-ellipse {
+  fill: #df0025;
+}
+
+.title {
+  line-height: 1em;
+  height: 1em;
+  display: flex;
+  place-items: center;
+  
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+input,
+button {
+  max-width: 100%;
+  margin-top: 1em;
+  display: block;
+  font: inherit;
+  padding: 1em;
+}
+
+@media (min-width: 500px) {
+  body {
+    flex-direction: row;
+  }
+
+  header,
+  main {
+    padding: 2em;
+  }
+
+  header {
+    width: 20%;
+  }
+
+  main {
+    width: 80%;
+  }
+
+  .title {
+    transform-origin: top left;
+    transform: translateY(5.5em) rotate(-90deg);
+  }
+}
