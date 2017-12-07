@@ -8,10 +8,10 @@ body {
   display: flex;
   flex-direction: column;
 
-  background: black;
+  background-color: #000d54;
   background-image: url('background.jpg');
   
-  color: white;
+  color: #F5F5F5;
   font-size: 2em;
   font-family: sans-serif;
 }
@@ -62,8 +62,10 @@ button {
   max-width: 100%;
   margin-top: 1em;
   display: block;
-  font: inherit;
   padding: 1em;
+  
+  font: inherit;
+  font-size: 0.85em;
 }
 
 @media (min-width: 500px) {
